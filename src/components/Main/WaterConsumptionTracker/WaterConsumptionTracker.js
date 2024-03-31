@@ -1,6 +1,15 @@
 import sprite from '../../../pictures/icons/sprite.svg';
-import { Icon } from './WaterConsumptionTracker.styled';
-export const WaterConsumptionTracker= () => {
+import {
+  Container,
+  Heading,
+  Icon,
+  Title,
+  ListTitle,
+  List,
+  Item,
+  Button
+} from './WaterConsumptionTracker.styled';
+export const WaterConsumptionTracker = () => {
   const benefits = [
     {
       text: 'Habit drive',
@@ -16,21 +25,21 @@ export const WaterConsumptionTracker= () => {
     },
   ];
   return (
-    <div>
-      <h1>Water consumption tracker</h1>
-      <h2>Record daily water intake and track</h2>
-      <h3>Tracker Benefits</h3>
-      <ul>
+    <Container>
+      <Heading>Water consumption tracker</Heading>
+      <Title>Record daily water intake and track</Title>
+      <ListTitle>Tracker Benefits</ListTitle>
+      <List>
         {benefits.map(({ id, text }, index) => (
-          <li key={index}>
+          <Item key={index}>
             <Icon>
               <use href={id}></use>
             </Icon>
             {text}
-          </li>
+          </Item>
         ))}
-          </ul>
-          <button type="button">Try tracker</button>
-    </div>
+      </List>
+      <Button type="button">Try tracker</Button>
+    </Container>
   );
 };

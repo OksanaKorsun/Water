@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from '@emotion/styled';
 export const Title = styled.h3`
   font-weight: 500;
   font-size: 18px;
