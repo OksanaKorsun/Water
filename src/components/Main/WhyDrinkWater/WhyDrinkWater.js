@@ -1,6 +1,6 @@
-import { Item, List, Title, Wrapper, Container } from "./Benefits.styled";
+import { Item, List, Title, Wrapper, Container } from "./WhyDrinkWater.styled";
 
-export const Benefits = () => {
+export const WhyDrinkWater = () => {
     const list = [
     'Supply of nutrients to all organs',
     'Providing oxygen to the lungs',

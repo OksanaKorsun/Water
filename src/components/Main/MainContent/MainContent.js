@@ -1,11 +1,11 @@
-import { Benefits } from "../Benefits/Benefits"
-import { WaterTracker } from "../WaterTracker/WaterTraker"
+import { WhyDrinkWater } from "../WhyDrinkWater/WhyDrinkWater"
+import { WaterConsumptionTracker } from "../WaterConsumptionTracker/WaterConsumptionTracker"
 
 export const MainContent = () => {
     return (
         <div>
-            <WaterTracker />
-            <Benefits/>
+            <WaterConsumptionTracker />
+            <WhyDrinkWater/>
         </div>
     )
 }

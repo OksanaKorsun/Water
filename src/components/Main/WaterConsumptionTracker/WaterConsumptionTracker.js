@@ -1,6 +1,6 @@
 import sprite from '../../../pictures/icons/sprite.svg';
-import { Icon } from './WaterTraker.styled';
-export const WaterTracker = () => {
+import { Icon } from './WaterConsumptionTracker.styled';
+export const WaterConsumptionTracker= () => {
   const benefits = [
     {
       text: 'Habit drive',
