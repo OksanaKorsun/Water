@@ -1,4 +1,5 @@
-import { UserAuth } from 'components/UserAuth.js/UserAuth';
+// import { UserAuth } from 'components/UserAuth.js/UserAuth';
+import PopoverPopupState from 'components/Popover/Popover';
 import { Logo } from '../Logo/Logo';
 import { Wrapper } from './Header.styled';
 export const Header = () => {
@@ -6,7 +7,8 @@ export const Header = () => {
     <header>
       <Wrapper>
         <Logo />
-        <UserAuth />
+        <PopoverPopupState/>
+        {/* <UserAuth /> */}
       </Wrapper>
     </header>
   );
