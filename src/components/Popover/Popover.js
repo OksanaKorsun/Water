@@ -1,18 +1,15 @@
-// import Button from '@mui/material/Button';
-// import Avatar from '@mui/material/Avatar';
+
 import Popover from '@mui/material/Popover';
 import PopupState, { bindTrigger, bindPopover } from 'material-ui-popup-state';
 import sprite from '../../pictures/icons/sprite.svg';
-import { PopIcon, StyledBtn, UserDefaultAvatar } from './Popover.styled';
-// import { deepPurple } from '@mui/material/colors';
+import { PopBtn, PopIcon, PopItem, PopList, StyledBtn, UserDefaultAvatar } from './Popover.styled';
+
 export default function PopoverPopupState() {
   return (
     <PopupState variant="popover" popupId="demo-popup-popover">
       {popupState => (
         <div>
-          <StyledBtn
-            variant="contained"
-            {...bindTrigger(popupState)}
+          <StyledBtn {...bindTrigger(popupState)}
             >
             <UserDefaultAvatar>OP</UserDefaultAvatar>
             <PopIcon>
@@ -23,31 +20,31 @@ export default function PopoverPopupState() {
             {...bindPopover(popupState)}
             anchorOrigin={{
               vertical: 'bottom',
-              horizontal: 'center',
+              horizontal: 'right',
             }}
             transformOrigin={{
               vertical: 'top',
-              horizontal: 'center',
+              horizontal: 'right',
             }}
           >
-            <ul>
-              <li>
-                <button>
+            <PopList>
+              <PopItem>
+                <PopBtn type='button'>
                   <PopIcon>
                     <use href={`${sprite}#icon-settings`}></use>
                   </PopIcon>
                   Settings
-                </button>
-              </li>
-              <li>
-                <button>
+                </PopBtn>
+              </PopItem>
+              <PopItem>
+                <PopBtn type='button'>
                   <PopIcon>
-                    <use href={`{sprite}#icon-pop-up`}></use>
+                    <use href={`${sprite}#icon-logout`}></use>
                   </PopIcon>
                   Log out
-                </button>
-              </li>
-            </ul>
+                </PopBtn>
+              </PopItem>
+            </PopList>
           </Popover>
         </div>
       )}

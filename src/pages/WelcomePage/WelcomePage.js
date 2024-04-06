@@ -1,7 +1,9 @@
 import { MainContent } from "components/Main/MainContent/MainContent"
 import { Section, Wrapper } from "./WelcomePage.styled"
 import PopoverPopupState from "components/Popover/Popover"
-import { Ref } from "components/Ref/Ref"
+// import { Ref } from "components/Ref/Ref"
+// import BasicPopover from "components/Popover/BasicPopover"
+// import { AvatarLogo } from "components/AvatarLogo/AvatarLogo"
 // import { useSelector } from 'react-redux';
 // import { selectIsLoggedIn, selectUser } from '../redux/selectors';
 
@@ -14,7 +16,10 @@ export default function WelcomePage() {
             <Section>
                 <MainContent />
                 <PopoverPopupState />
-                <Ref/>
+                {/* <Ref />
+                <BasicPopover />
+                <AvatarLogo/> */}
+                <PopoverPopupState/>
             </Section>
         </Wrapper>
     )
